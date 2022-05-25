@@ -1,0 +1,26 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "Telegram channel content crawler",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.32",
+    "@types/yargs": "^17.0.10",
+    "common": "file:../common",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "aws-sdk": "^2.1133.0",
+    "cheerio": "^1.0.0-rc.10",
+    "node": "^17.7.2",
+    "telegram": "^2.7.32",
+    "yargs": "^17.5.1"
+  }
+}

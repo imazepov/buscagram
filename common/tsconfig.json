@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "declaration": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es5",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "lib": [
+            "es5",
+            "dom"
+        ]
+    }
+}
