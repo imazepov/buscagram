@@ -13,8 +13,10 @@
   "dependencies": {
     "@elastic/elasticsearch": "^8.2.0-patch.1",
     "@opensearch-project/opensearch": "^1.1.0",
+    "@types/yargs": "^17.0.10",
     "aws-sdk": "^2.1140.0",
-    "common": "file:../common"
+    "common": "file:../common",
+    "yargs": "^17.5.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.34",

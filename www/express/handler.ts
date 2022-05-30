@@ -15,8 +15,9 @@ import { connectTelegram, errorResponse } from './util';
 
 const app = express();
 
+const dynamoEndpoint = process.env.DDB_ENDPOINT;
 const dynamoDbClient = new AWS.DynamoDB.DocumentClient({
-  endpoint: 'http://home-pc:8066',
+  endpoint: dynamoEndpoint,
 });
 const dao = new DAO(dynamoDbClient);
 
@@ -39,7 +40,7 @@ app.use(session({
       accessKeyId: 'Fake',
       secretAccessKey: 'Fake',
       region: 'us-east1',
-      endpoint: 'http://home-pc:8066',
+      endpoint: dynamoEndpoint,
     },
   }),
 }));
